@@ -1,0 +1,586 @@
+/* Ana Gomes - 1230701 */
+/* Rodapé estilos */
+.footer-newsletter {
+    background-color: #acd89b;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.newsletter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.newsletter-header h2 {
+    color: #0c3708;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.newsletter-header p {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.subscribe-btn {
+    background-color: #99cf84;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #7dbd6d;
+}
+
+.footer-links-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.links-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.links-column h3 {
+    color: #0c3708;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.links-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-column li {
+    margin-bottom: 12px;
+}
+
+.links-column a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links-column a:hover {
+    color: #0c3708;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #b9dfae;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.footer-bottom a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .links-column {
+        min-width: 150px;
+    }
+
+    .newsletter-header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Estilos Especialidade */
+.specialty-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.specialty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    padding: 1rem 1.5rem;
+    border-bottom: none;
+}
+
+.exam-list {
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+.exam-list li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.exam-list li:before {
+    content: "•";
+    color: #99cf84;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.btn-primary {
+    background-color: #99cf84;
+    border-color: #99cf84;
+}
+
+.btn-primary:hover {
+    background-color: #7dbd6d;
+    border-color: #7dbd6d;
+}
+
+
+/* Carrousel */
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    /* Cor de fundo opcional */
+    padding: 20px 0;
+}
+
+/* Container do carrossel */
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    /* Largura máxima desejada */
+}
+
+/* Ajustes para o carrossel */
+#carouselExemplo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Imagens com tamanho consistente */
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    /* Altura fixa */
+    object-fit: cover;
+    /* Mantém proporção */
+    object-position: center;
+    /* Centraliza a imagem */
+}
+
+/* Centraliza imagens */
+.carousel-item img.d-block.w-50 {
+    width: 100% !important;
+    height: 500px;
+}
+
+/* Qualidade de imagens */
+.carousel img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+/* Legendas no canto inferior esquerdo com tema verde */
+.carousel-caption {
+    position: absolute;
+    left: 20px;
+    /* Distância da borda esquerda */
+    bottom: 20px;
+    /* Distância da borda inferior */
+    top: auto;
+    /* Anula qualquer posicionamento vertical superior */
+    right: auto;
+    /* Anula qualquer posicionamento horizontal direito */
+    transform: none;
+    /* Remove a transformação anterior */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    background-color: #d0eac7;
+    /* Cores verdes */
+    border-radius: 5px;
+    padding: 15px 20px;
+    max-width: 40%;
+    /* Limita a largura para não ocupar toda a tela */
+}
+
+/* Estilo específico para os títulos */
+.carousel-caption h5 {
+    color: #0c3708;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+/* Estilo específico para os parágrafos */
+.carousel-caption p {
+    color: #0c3708;
+    margin-bottom: 0;
+}
+
+/* Setas de navegação mais visíveis */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    background-color: #444(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        bottom: 20px;
+        transform: none;
+        width: 90%;
+        left: 5%;
+    }
+}
+
+
+/* Motor de pesquisa */
+.search-box-container {
+    position: absolute;
+    top: 120px;
+    /* Posição abaixo da navbar */
+    left: 30px;
+    z-index: 10;
+    /* Acima do carrossel */
+}
+
+.search-box {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex
+}
+
+.search-box input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    padding: 5px;
+    outline: none;
+}
+
+.search-box i {
+    margin-left: 10px;
+    color: #555;
+}
+
+
+
+/* Texto de apresentação na página inicial */
+.section {
+    padding: 30px 20px 50px;
+    text-align: center;
+    color: black;
+}
+
+.section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Estilos para retangulo na página inicial de fazer agendamento */
+.highlight-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    color: #99cf84;
+    position: absolute;
+    top: 75%;
+    /* Posiciona a 2/3 da altura */
+    right: 30px;
+    z-index: 10;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transform: translateY(-50%);
+    /* Centraliza verticalmente no ponto */
+    text-align: center;
+    /* Centraliza o texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* Espaçamento entre os elementos */
+}
+
+.highlight-box p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.highlight-box p2 {
+    margin: 5px 0;
+    color: black;
+}
+
+.highlight-box a {
+    color: #99cf84;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #99cf84;
+    border-radius: 12px;
+    margin-top: 10px;
+    /* Espaço adicional acima do botão */
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.highlight-box a:hover {
+    background-color: #efeded;
+    border-color: #efeded;
+    color: #7a9e6a;
+}
+
+
+/* Estilos para o botão de acessibilidade */
+/* Estilos para o botão de acessibilidade */
+div#userwayAccessibilityIcon {
+    top: auto !important;
+    left: 20px !important;
+    right: auto !important;
+    bottom: 20px !important;
+
+    background-color: #2d6a4f !important;
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+div#userwayAccessibilityIcon img {
+    filter: brightness(0) invert(1) !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+
+/* Especialidades */
+/* Especialidades - Cards */
+/* Container principal dos cards */
+.specialty-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Container da imagem para controle preciso */
+.card-img-container {
+    height: 180px; /* Altura fixa para todas as imagens */
+    overflow: hidden;
+}
+
+/* Estilo da imagem */
+.specialty-card .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* Corpo do card */
+.specialty-card .card-body {
+    padding: 1.25rem;
+    flex-grow: 1; /* Faz o corpo do card ocupar o espaço restante */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Título do card */
+.specialty-card .card-title {
+    margin: 0;
+    text-align: center;
+    color: #99cf84;
+    font-weight: 600;
+}
+
+/* Efeito hover */
+.specialty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.specialty-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Classes de altura */
+.h-70 {
+    height: 70%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-img-container {
+        height: 150px;
+    }
+    
+    .specialty-card .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Efeito de zoom nas imagens dos cards */
+.specialty-card img {
+  transition: transform 0.5s ease;
+}
+
+.specialty-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Melhorar a legibilidade do modal */
+.modal-body {
+  line-height: 1.6;
+}
+
+.modal-body p {
+  margin-bottom: 1.5rem;
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 0.5rem auto;
+  }
+  
+  .modal-content {
+    border-radius: 0;
+  }
+  
+  .exams-list {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animar a abertura do modal */
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50px);
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+}
+
+.exams-list {
+    list-style: none; 
+    padding-left: 0;  
+}
+
+.exams-list li {
+    margin-bottom: 8px; 
+    display: flex;
+    align-items: center;
+}
+
+.exams-list li i {
+    margin-right: 8px; 
+    color: #99cf84; 
+}
+
+.modal-title {
+    text-align: center;
+    width: 100%;
+    color: #99cf84;
+    font-weight: bold;
+}
+
+
+
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+/* Modal do QR Code */
+#whatsappModal .modal-content {
+    border: 3px solid #25D366;
+}
+
+#whatsappModal img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}

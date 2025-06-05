@@ -1,0 +1,71 @@
+/* marcacao */
+
+#marcacao .titulo-marcacao {
+    color: #2d6a4f;
+    background-color:rgb(36, 80, 123);
+}
+
+#marcacao .tipo-card {
+    background-color: #f8f9fa;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+#marcacao .tipo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #99cf84 !important;
+}
+
+#marcacao .tipo-card.border-primary {
+    border-color: #99cf84 !important;
+    background-color: #e8f5e9 !important;
+}
+
+#marcacao .card-title {
+    color: #2d6a4f;
+}
+
+#marcacao .btn-primary {
+    background-color: #99cf84;
+    border-color: #99cf84;
+    transition: all 0.3s ease;
+}
+
+#marcacao .marcacao:hover {
+    background-color: #7db36a !important;
+    border-color: #7db36a !important;
+    transform: translateY(-2px);
+}
+
+#marcacao .invalid-feedback {
+    color: #dc3545;
+}
+
+#marcacao .is-invalid {
+    border-color: #dc3545 !important;
+}
+
+/* testemunhos */
+#testemunhos .card {
+    background-color: #f9f9f9 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+#testemunhos .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#testemunhos .card-text {
+    font-style: italic;
+    color: #555;
+}
+
+#testemunhos .card-title {
+    color: #2d6a4f !important;
+    font-weight: 600;
+}

@@ -1,0 +1,356 @@
+/* Ana Gomes 1230701 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+/* Estilos para as páginas Política e Proteção de dados, Termos e condições, Informações Legais*/
+.navpriv-link {
+    color: #0c3708 !important;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.navpriv-link:hover,
+.navpriv-link:focus {
+    background-color: #99cf84;
+    color: white !important;
+}
+
+.navpriv-link.active {
+    background-color: #99cf84;
+    color: white !important;
+}
+
+.section-title {
+    color: #99cf84;
+    border-bottom: 2px solid #b9dfae;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.privacy-content {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.hero-section {
+    background: #d0eac7;
+    background-size: cover;
+    color: #0c3708;
+    padding: 100px 0;
+}
+
+.terms-image {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.terms-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ________________________________ */
+/* Estilos para o Canal de Denúncias */
+/* Estilos gerais */
+.logo-biolance {
+    max-width: 150px;
+}
+
+/* Hero Section */
+.denuncias-hero {
+    background: #d0eac7;
+    color: #0c3708;
+    padding: 65px 0;
+    text-align: center;
+}
+
+/* Cards de conteúdo */
+.denuncias-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-top: 4px solid #99cf84;
+}
+
+.denuncias-title {
+    color: #99cf84;
+    border-bottom: 2px solid #b9dfae;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-weight: normal;
+}
+
+/* Navegação lateral */
+.navpriv-link {
+    color: #0c3708;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.navpriv-link:hover,
+.navpriv-link:focus {
+    background-color: #99cf84;
+    color: white !important;
+}
+
+.navpriv-link.active {
+    background-color: #99cf84;
+    color: white !important;
+}
+
+/* Elementos do processo */
+.denuncias-step {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.step-number {
+    background-color: #99cf84;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+.step-content {
+    flex-grow: 1;
+}
+
+/* Badge de confidencialidade */
+.confidencialidade-badge {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    padding: 8px 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #0c3708;
+}
+
+/* Formulário */
+.form-label {
+    font-weight: 600;
+    color: #0c3708;
+}
+
+.btn-denuncia {
+    background-color: #0c3708;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-denuncia:hover {
+    background-color: #99cf84;
+    transform: translateY(-2px);
+}
+
+.info-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #99cf84;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Cards de proteção */
+.card-protecao {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.card-protecao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-protecao .icon {
+    color: #99cf84;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Alertas */
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+}
+
+/* Ícones nas áreas de reporte */
+.area-reporte-icon {
+    color: #99cf84;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+
+/* Estilos Login */
+.auth-container {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.auth-card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.auth-header {
+    background: white;
+    border-radius: 10px 10px 0 0 !important;
+    padding: 30px 20px 10px;
+    border-bottom: none;
+}
+
+.auth-logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.auth-tabs {
+    margin-top: 20px;
+}
+
+.auth-tabs .nav-link {
+    color: #6c757d;
+    font-weight: 600;
+    border: none;
+    padding: 12px 0;
+    position: relative;
+    margin: 0 15px;
+}
+
+.auth-tabs .nav-link.active {
+    color: #99cf84;
+    background: transparent;
+}
+
+.auth-tabs .nav-link.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #99cf84;
+    border-radius: 3px 3px 0 0;
+}
+
+.auth-body {
+    padding: 30px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.form-control-custom {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 12px 15px;
+    height: auto;
+}
+
+.form-control-custom:focus {
+    border-color: #99cf84;
+    box-shadow: 0 0 0 0.2rem rgba(153, 207, 132, 0.25);
+}
+
+.btn-auth {
+    background-color: #99cf84;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.btn-auth:hover {
+    background-color: #88bb74;
+    color: white;
+}
+
+.forgot-password {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.forgot-password:hover {
+    color: #99cf84;
+    text-decoration: underline;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6c757d;
+    margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.divider::before {
+    margin-right: 10px;
+}
+
+.divider::after {
+    margin-left: 10px;
+}
+
+

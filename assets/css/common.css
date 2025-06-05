@@ -1,0 +1,410 @@
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Navbar fixa */
+.bng-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+/* Navbar principal */
+.biolance-navbar {
+    background: linear-gradient(to right, #99cf84 90%, white 10%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 24px;
+    width: 100%;
+}
+
+/* Espaço para a navbar fixa */
+body {
+    padding-top: 80px;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Logo */
+.navbar-left img {
+    height: 55px;
+    transition: transform 0.3s;
+}
+
+.navbar-left img:hover {
+    transform: scale(1.05);
+}
+
+/* Container central + direita */
+.navbar-main {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+/* Links centrais */
+.navbar-center {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar-center a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    transition: all 0.3s;
+    position: relative;
+    padding: 8px 0;
+    white-space: nowrap;
+}
+
+.navbar-center a:hover {
+    color: #f0f0f0;
+}
+
+.navbar-center a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.navbar-center a:hover::after {
+    width: 100%;
+}
+
+/* Login e idioma */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.login-language-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.login-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    color: #99cf84;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.login-link:hover {
+    background-color: #99cf84;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-link i {
+    transition: color 0.3s;
+}
+
+.login-link:hover i {
+    color: white;
+}
+
+.language-switch {
+    color: #666;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.language-switch a {
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.language-switch a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.language-switch a.active {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Dropdown melhorado */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-size: 14px; /* Tamanho menor para o submenu */
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+    color: #99cf84;
+    padding-left: 25px;
+}
+
+/* Triângulo do dropdown */
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+/* Botão mobile (hidden por padrão) */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsividade melhorada */
+@media (max-width: 1200px) {
+    .biolance-navbar {
+        background: linear-gradient(to right, #99cf84 85%, white 15%);
+    }
+    
+    .navbar-center {
+        gap: 20px;
+    }
+    
+    .navbar-main {
+        margin-right: 30px;
+        gap: 20px;
+    }
+    
+    .navbar-center a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .biolance-navbar {
+        background: linear-gradient(to right, #99cf84 80%, white 20%);
+    }
+    
+    .login-link {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .biolance-navbar {
+        padding: 12px 16px;
+        height: 70px;
+        background: #99cf84; /* Fundo sólido em mobile */
+    }
+
+    .navbar-left img {
+        height: 45px;
+    }
+
+    .navbar-main {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #99cf84;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 15px;
+        margin-right: 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-main.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .navbar-center {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .dropdown-content {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        margin-top: 0;
+        display: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 100%;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        margin-top: 0;
+    }
+
+    .dropdown-content a {
+        color: white;
+        font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+        color: #f0f0f0;
+        background-color: transparent;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .login-language-container {
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .login-link {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .language-switch {
+        width: 100%;
+        text-align: left;
+        color: white;
+    }
+    
+    .language-switch a {
+        color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    .biolance-navbar {
+        padding: 10px 12px;
+        height: 60px;
+    }
+    
+    .navbar-left img {
+        height: 40px;
+    }
+    
+    .navbar-main {
+        top: 60px;
+        padding: 15px;
+    }
+    
+    body {
+        padding-top: 60px;
+    }
+    
+    section {
+        scroll-margin-top: 60px;
+    }
+    
+    .mobile-menu-btn {
+        font-size: 20px;
+    }
+    
+    .dropdown-content {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .biolance-navbar {
+        padding: 8px 10px;
+    }
+    
+    .navbar-left img {
+        height: 36px;
+    }
+    
+    .login-link {
+        padding: 6px 10px;
+        font-size: 13px;
+}
+}
+
+/* Estilos para os títulos da página public */
+/* Título da secção */
+.secao-titulo {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #145c32;
+  margin-bottom: 0.5rem;
+}
+
+.decorador {
+  width: 60px;
+  height: 4px;
+  background-color: #99cf84;
+  margin: 0 auto 2rem;
+  border-radius: 2px;
+}
